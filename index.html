@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking each stylesheet to its corresponding HTML file-->
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/global.css">
+    <title>Travel Site - Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h3 class="navbar__wordmark"><a class="navbar__link-logo" href="index.html">Travel Site</a></h3>
+            <ul class="navbar__list"><!--Assignment requirement: must use an unordered list for the menu items in the nav bar-->
+                <li class="navbar__item navbar__item--active"><a class="navbar__link" href="index.html">Home</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/hawaii.html">Hawaii</a></li>
+                <li class="navbar__item"><a class="navbar__link " href="./pages/iceland.html">Iceland</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/greece.html">Greece</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <div class="hero__div">
+                <h1 class="hero__heading">Travelling Comes With Endless Discoveries</h1>
+                <p class="hero__text">Don't let your dreams be just dreams. Experience the world by booking a vacation
+                    with us now. </p>
+                <a class="hero__link" href="./pages/hawaii.html"><button class="hero__button">Get started</button></a>
+            </div>
+            <img class="hero__image" src="./assets/images/hero.png" alt="hero">
+        </section>
+    </header>
+    <main>
+        <section class="recommendations">
+            <h2 class="recommendations__title">Recommendations</h2>
+            <nav class="recommendations__group">
+                <a class="recommendations__link" href="./pages/hawaii.html"><!--Used a tag to aorund the cards in order to link to appropriate page-->
+                    <article class="recommendations__card recommendations__card-first">
+                        <h3 class="recommendations__heading">Hawaii</h3>
+                    </article>
+                </a>
+                <a class="recommendations__link" href="./pages/iceland.html">
+                    <article class="recommendations__card recommendations__card-second">
+                        <h3 class="recommendations__heading">Iceland</h3>
+                    </article>
+                </a>
+                <a class="recommendations__link" href="./pages/greece.html">
+                    <article class="recommendations__card recommendations__card-third">
+                        <h3 class="recommendations__heading">Greece</h3>
+                    </article>
+                </a>
+            </nav>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__card footer__card-margin">
+            <h2 class="footer__title">Contact</h2>
+            <div class="footer__body">
+                <h3 class="footer__subtitle">EMAIL</h3>
+                <p class="footer__copy"><a class="footer__link"
+                        href="mailto:info@travelsite.com">info@travelsite.com</a></p>
+            </div>
+        </section>
+        <section class="footer__card footer__card-margin">
+            <h2 class="footer__title">Hours</h2>
+            <div class="footer__list">
+                <div class="footer__body">
+                    <h3 class="footer__subtitle">MONDAY - FRIDAY</h3>
+                    <p class="footer__copy">9:00 AM - 5:00 PM</p>
+                </div>
+                <div class="footer__body">
+                    <h3 class="footer__subtitle">SATURDAY</h3>
+                    <p class="footer__copy">10:00 AM - 4:00 PM</p>
+                </div>
+                <div class="footer__body">
+                    <h3 class="footer__subtitle">SUNDAY</h3>
+                    <p class="footer__copy">Closed</p>
+                </div>
+            </div>
+        </section>
+        <section class="footer__card footer__card-width">
+            <h2 class="footer__title">Social</h2>
+            <nav class="footer__links">
+                <a class="footer__link-icon" href="https://www.instagram.com/"><img class="footer__icon"
+                        src="./assets/images/icon-instagram.png" alt="instagram"></a>
+                <a class="footer__link-icon" href="https://www.facebook.com/"><img class="footer__icon"
+                        src="./assets/images/icon-facebook.png" alt="facebook"></a>
+                <a class="footer__link-icon" href="https://www.twitter.com/"><img class="footer__icon"
+                        src="./assets/images/icon-twitter.png" alt="twitter"></a>
+            </nav>
+        </section>
+    </footer>
+</body>
+
+</html>

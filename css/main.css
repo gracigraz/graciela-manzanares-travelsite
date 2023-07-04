@@ -1,0 +1,105 @@
+/*This page corresponds to the styles that will be used specific to the main page. The home page has 4 sections, 2 of which 
+(navigation bar and footer) are share with the destination pages so that code is in the global css file.*/
+
+/*Removing margin and padding from default element styling and setting box-sizing to border-box 
+to tell the browser to account for any border and padding in the values I specify for an element's width and height (so that 
+padding and border are included in the width and height of an element)*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*CSS code for Hero section
+Assignment requirement: hero background color must be #FEFAF5*/
+.hero{
+    background-color: #FEFAF5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3.75rem 5.625rem; 
+    margin-top: 3.375rem; /* I added this margin to account for the height of the nav bar, since when I used position:fixed and top:0 to fix it to the top of the page, this overlays the rest of the content.*/
+}
+.hero__div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-right: 6.25rem;
+}
+
+/* Assignment requirement: The slogan color must be #335576*/
+.hero__heading{
+    color: #335576;
+    margin-bottom: 2.1875rem;
+    font-size: 2.1875rem;
+}
+/* Assignment requirement: The slogan color must be #335576*/
+.hero__text{
+    color: #335576;
+    margin-bottom: 2.0625rem;
+    font-size: .875rem;  
+}
+/* Assignment requirement: The "Get Started" button background color must be #DB7A4E*/
+.hero__button{
+    background-color: #DB7A4E;
+    color: white;
+    font-size: 1rem;
+    padding: .5rem 2.375rem;
+    border-radius:  1rem;
+    border-style: none;
+    font-weight: 300;
+    margin-bottom: 3.1875rem;
+}
+
+.hero__image{
+    width: 39%;
+    height: 39%;
+}
+
+/*CSS code for Recommendations section*/
+
+.recommendations{
+    background-color: #FFFFFF; 
+    padding: 0.89rem 5.625rem; 
+}
+/*Assignment requirement: the recommendations title must have the color of #335576*/
+.recommendations__title{
+    font-size: 1.375rem;
+    margin: 1.8rem 0;
+    color:#335576;
+}
+.recommendations__group{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.36rem;
+}
+
+.recommendations__heading{
+    font-size: 1.3125rem;
+    color: white;
+
+}
+/* There's one card for each destination (Iceland, Greece, Hawaii) but the all share the following code except for the background image*/
+.recommendations__card{
+    background-position: center;
+    background-size: cover;
+    width: 15.625rem;
+    height: 23.4375rem;
+    border: 1px solid rgba(0, 0, 0, 0.2); /*Assignment requirement: the border of the cards must be 1px solid black with an opacity of 20% */
+    border-radius: 5px; /*Assignment requirement: the border radius of the cards must be 5px - didn't change this to rel units since specifically said px*/
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);/*Assignment requirement: the shadow of the cards must be hor. offset 0px vert. offset 4px blur 4px black and opacity 20 - didn't change this to rel units since specifically said px%*/
+    padding: 0 1rem 1rem 0;  /*Assignment requirement: the destination name must be in the bottom right corner of the card*/
+    margin: 0 1.25rem;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; /*Assignment requirement: the destination name must be in the bottom right corner of the card*/
+    align-items: flex-end; /*Assignment requirement: the destination name must be in the bottom right corner of the card*/
+}
+
+/* Each card is linked to the appropriate destination page. Clicking anywhere on the card goes to the 
+corresponding destination page*/
+.recommendations__link{
+    text-decoration: none;
+}

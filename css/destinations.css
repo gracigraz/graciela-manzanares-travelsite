@@ -1,0 +1,65 @@
+/*This page corresponds to the styles that will be used specific to the destination pages.
+
+*/
+* {
+    box-sizing: border-box;/*includes padding and border in the width and height*/
+    padding: 0;
+    margin: 0;
+}
+
+.destination{
+    background-position: center;
+    background-size: cover; /* Assignment requirement: image asset for the destination must take up the full width/height of the background of the page*/
+    padding: 0.89rem 5.625rem; 
+    margin-top: 3.375rem; /* I added this margin to account for the height of the nav bar, since when I used position:fixed and top:0 to fix it to the top of the page, this overlays the rest of the content.*/
+}
+
+/*Assignment requirement: destination pages must have a title with the destination name*/
+.destination__title{
+    font-size: 3.75rem;
+    color: #FFFFFF;
+    margin: 4.125rem 0;
+}
+
+.destination__card-group{
+    display:flex;
+    justify-content: center;
+    height: 21.875rem;
+    margin-bottom: 7.45rem;
+}
+.destination__card{
+    display: flex;
+    flex-direction: column;
+    width: 22.75%;
+    background-color: #FFFFFF;
+    padding: 0 .875rem 3.8125rem 0.875rem;
+    margin: 0 1.25rem 0 1.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.2) ;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.destination__subtitle{
+    font-size: 1.125rem;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding-top: .9375rem;
+    margin-bottom: 1.4375rem;
+    width: 100%;
+}
+
+.destination__list{
+    font-size: 1.3125rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;  
+    height: 100%;
+}
+.destination__item{
+    font-size: 1.125rem;
+    background-color: #FEFAF5; /*Assignment requirement: itinerary activities must have a background color of #FEFAF5*/
+    text-align: center;
+    padding: .625rem 0;
+}

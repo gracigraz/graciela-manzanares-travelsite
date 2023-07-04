@@ -1,0 +1,155 @@
+/*This page corresponds to the styles you will use throughout the entire site, that are not specific to a page.
+
+Removing margin and padding from default element styling and setting box-sizing to border-box 
+to tell the browser to account for any border and padding in the values I specify for an element's width and height (so that 
+padding and border are included in the width and height of an element)*/
+* {
+    box-sizing: border-box;/*includes padding and border in the width and height*/
+    padding: 0;
+    margin: 0;
+}
+
+/* the code inside body will change the font-family to Verdana, as well as set the default font-weight to 400, or 'Regular'*/
+body {
+    font-family: 'Verdana';
+    font-weight: 400;/*regular*/
+}
+
+/*Navigation bar CSS code - home and destination pages have identical navigation bars
+Assignment requirement: The navigation bar must be fixed to the top of the page
+*/
+.navbar {
+    background-color: #FFFFFF; /* Assignment requirement: background color must be #FFFFFF */
+    display: flex;
+    flex-direction: row;/*by deafult when setting display to flex the flex-direction is row, adding this line for clarity*/
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+}
+
+.navbar__wordmark {
+    font-size: 1.125rem;
+    margin: 1rem 0 1rem 5.625rem;
+    font-weight: 700;
+    color: #335576; /* Assignment requirement: background color must be #335576 */
+}
+
+.navbar__list {
+    list-style-type: none;
+    font-weight: 300;
+    font-size: .875rem;
+    display: flex;
+    flex-direction: row;
+    margin-right: 5.625rem;
+}
+
+
+.navbar__item {
+    padding-left: 1.125rem;
+
+}
+
+.navbar__link {
+    color: black;
+    text-decoration: none;
+}
+.navbar__link-logo{
+    color: #335576;
+    text-decoration: none;
+}
+
+.navbar__item--active {
+    text-decoration: underline #DB7A4E 2px; /* Assignment requirement: currently active page must be underlined using the color #DB7A4E */
+    text-underline-offset: 70%;
+}
+
+/*Footer CSS code - home and destination pages have identical footers
+
+Assignment requirement: footer background color must be #FEFAF5*/
+.footer {
+    background-color: #FEFAF5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 12.5rem;
+}
+
+.footer__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 47.72%;
+}
+
+.footer__card-margin {
+    margin-right: 4rem;
+}
+
+.footer__card-width {
+    width: 10vw;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #335576;
+}
+
+.footer__list {
+    display: flex;
+}
+
+.footer__body {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.75rem;
+}
+/*Assignment requirement: footer title must be the color #335576*/
+.footer__title {
+    color: #335576;
+    font-size: 1.2813rem;
+}
+/*Assignment requirement: footer subtitles must be the color #DB7A4E*/
+.footer__subtitle {
+    color: #DB7A4E;
+    font-size: .5625rem;
+    font-weight: 300;
+    margin-bottom: .625rem;
+}
+/*Assignment requirement: footer text must be the color #335576*/
+.footer__copy {
+    color: #335576;
+    font-size: .875rem;
+    font-weight: 300;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer__link-icon {
+    margin-top: 1.4688rem;
+    height: 50%;
+}
+
+.footer__icon {
+    height: 50%;
+}
+
+/* There's one card for each destination in both main (recomendations section) and destinations pages*/
+.recommendations__card-first, .destination-first{
+    background-image: url("../assets/images/hawaii.jpg");
+}
+.recommendations__card-second, .destination-second{
+    background-image: url("../assets/images/iceland.jpg");
+}
+.recommendations__card-third, .destination-third{
+    background-image: url("../assets/images/greece.jpg");
+}
+
+
